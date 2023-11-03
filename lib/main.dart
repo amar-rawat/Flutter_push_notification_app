@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/homePage',
       routes: {
         '/homePage': (context) => const HomePage(),
-        '/notifocationPage': (context) => const NotificationPage()
+        '/notificationPage': (context) => const NotificationPage()
       },
     );
   }

@@ -27,12 +27,12 @@ class FirebaseApi {
     }
     // navigate to new screen when message is recieved and user taps notification
     navigatorKey.currentState
-        ?.pushNamed('/notificationPage', arguments: [message]);
+        ?.pushNamed('/notificationPage', arguments: message);
   }
 
   //functions to initialized background settings
   Future initPushNotifications() async {
-    //handle notifications if the app is terminated and now opened
+    //handle notifications if the app was terminated and now opened
     FirebaseMessaging.instance.getInitialMessage().then(handleMessage);
 
     //attach event listeners for when a notification opens the app
